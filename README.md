@@ -41,3 +41,9 @@ npm run preview
 6. Add tests, deployment configuration, persistent file storage and operational documentation.
 
 This milestone is a visual and frontend foundation, not a production-ready business platform.
+
+
+## Modern UI refresh
+- Updated the home-page hero to feature a romantic Black bride-and-groom wedding portrait.
+- Refined the forest, ivory and champagne palette, navigation, buttons, spacing, cards and mobile presentation.
+- The hero photograph is loaded from Zola's wedding editorial image CDN; keep the image URL available or replace it with an approved Emma's Decor MW photograph before production.

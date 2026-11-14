@@ -219,3 +219,52 @@ h2 { font: 500 clamp(2.8rem, 5vw, 5.2rem)/1.03 var(--serif); letter-spacing: -.0
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Modern editorial polish */
+:root { --gold: #c9a66b; --ivory: #faf7f1; --paper: #fffefa; --forest: #123d30; --forest-2: #1c5944; }
+body { background: var(--ivory); }
+.site-shell { background: var(--ivory); }
+.site-header { color: #fff; }
+.site-header.is-scrolled { background: rgba(250,247,241,.92); box-shadow: 0 8px 30px rgba(24,54,44,.08); }
+.header-inner { height: 82px; max-width: 1500px; }
+.brand-mark { background: rgba(201,166,107,.1); box-shadow: 0 0 0 5px rgba(201,166,107,.06); }
+.desktop-nav a { position: relative; padding: 9px 0; }
+.desktop-nav a:after { content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 1px; background: var(--gold); transition: right .25s ease; }
+.desktop-nav a:hover:after { right: 0; }
+.header-cta { border-radius: 3px; padding: 13px 18px; }
+.hero { min-height: 760px; height: min(850px, 100svh); }
+.hero-image { inset: 0 0 0 34%; background: #485b4a url('https://images.ctfassets.net/77l22z9el0aa/6mXRCt3IrHATwonXcEQjmA/ca62ca570353d61327e5e685d2737fde/Hero_Zola__36_.jpg') center 38% / cover no-repeat; }
+.hero-image:before { opacity: .12; background: linear-gradient(115deg, rgba(11,48,35,.1), transparent 55%); }
+.hero-image:after { background: linear-gradient(90deg, var(--forest) 0%, rgba(18,61,48,.9) 12%, rgba(18,61,48,.2) 58%, rgba(18,61,48,.05) 100%), linear-gradient(0deg, rgba(12,35,27,.45), transparent 38%); }
+.hero-image-wash { inset: 7% 6% 8% 12%; border-color: rgba(255,248,232,.48); }
+.hero-orbit { border-color: rgba(255,248,232,.22); }
+.hero-flower { text-shadow: 0 12px 45px rgba(0,0,0,.2); }
+.hero-content { width: 58%; padding-left: 10.5%; }
+.hero h1 { font-size: clamp(4.2rem, 7.8vw, 7.5rem); line-height: .98; letter-spacing: -.06em; }
+.hero-description { max-width: 410px; font-size: 14px; line-height: 1.85; }
+.button-primary, .button-light { border-radius: 3px; padding: 17px 21px; box-shadow: 0 10px 28px rgba(201,166,107,.16); }
+.section-pad { padding-top: 118px; padding-bottom: 118px; }
+.intro-section { background: #faf7f1; }
+.services-section { background: #f0ede5; }
+.service-row { min-height: 225px; }
+.service-art { border-radius: 3px; box-shadow: 0 12px 30px rgba(36,48,38,.08); }
+.service-info h3 { letter-spacing: -.025em; }
+.gallery-section { background: #fffefa; }
+.gallery-art { border-radius: 3px; box-shadow: 0 16px 40px rgba(30,45,35,.1); }
+.gallery-caption { padding: 20px 2px; }
+.process-section { background: #e9ece4; }
+.process-step { padding: 28px 0; }
+.closing-section { background: radial-gradient(ellipse at 50% 0%, #245b45 0%, #123d30 55%, #0b3024 100%); }
+.site-footer { background: #092d22; }
+.account-modal { border-radius: 4px; }
+.modal-backdrop { backdrop-filter: blur(10px); }
+@media (max-width: 740px) {
+  .hero { min-height: 780px; }
+  .hero-image { inset: 0; background-position: 59% center; opacity: 1; }
+  .hero-image:after { background: linear-gradient(90deg, rgba(12,49,37,.9), rgba(12,49,37,.62) 66%, rgba(12,49,37,.25)), linear-gradient(0deg, rgba(12,35,27,.7), transparent 62%); }
+  .hero-content { padding: 165px 26px 125px; }
+  .hero h1 { font-size: clamp(4rem, 16vw, 6.3rem); }
+  .hero-image-wash { inset: 9% 5% 10%; }
+  .section-pad { padding: 76px 25px; }
+}

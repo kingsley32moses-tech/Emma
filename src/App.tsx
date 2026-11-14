@@ -76,18 +76,18 @@ function App() {
 
       <main>
         <section className="hero">
-          <div className="hero-image" role="img" aria-label="Atmospheric abstract event-inspired floral composition">
+          <div className="hero-image" role="img" aria-label="A newlywed couple sharing a romantic moment in elegant wedding attire">
             <div className="hero-image-wash" />
             <div className="hero-orbit orbit-one" />
             <div className="hero-orbit orbit-two" />
             <div className="hero-flower flower-one">✳</div>
             <div className="hero-flower flower-two">✳</div>
-            <div className="hero-image-caption"><span>THE ART OF GATHERING</span><span>01 — 03</span></div>
+            <div className="hero-image-caption"><span>A LOVE STORY, BEAUTIFULLY TOLD</span><span>01 — 03</span></div>
           </div>
           <div className="hero-content">
-            <div className="eyebrow"><span className="eyebrow-line" /> THOUGHTFULLY STYLED. BEAUTIFULLY REMEMBERED.</div>
-            <h1>Moments,<br /><em>beautifully</em><br />made.</h1>
-            <p className="hero-description">We bring your celebration to life through considered details, beautiful spaces and the feeling that makes a moment unforgettable.</p>
+            <div className="eyebrow"><span className="eyebrow-line" /> YOUR DAY. YOUR STORY. BEAUTIFULLY STYLED.</div>
+            <h1>Your moments,<br /><em>beautifully</em><br />made.</h1>
+            <p className="hero-description">From dream weddings to life’s special gatherings, we style beautiful spaces and thoughtful details that make every celebration unforgettable.</p>
             <div className="hero-buttons">
               <button className="button-primary" onClick={() => openAccount('register')}>Begin your plans <ArrowUpRight size={17} /></button>
               <a className="button-link" href="#services">Discover what we do <ArrowDownRight size={17} /></a>
